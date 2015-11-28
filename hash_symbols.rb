@@ -5,4 +5,4 @@ entry_04 = {name: "Timothy", email: "timothy.wonderful@gmail.com"}
 
 winner = entry_04[:name]
 
-puts "#{winner} is the winner of the Mac laptop!"
+puts "#{winner} is the winner of the Panda Bear!"
