@@ -1,43 +1,37 @@
 class Bear
-def set_name=(bear_name)
-@name = bear_name
-end
+  def set_name=(bear_name)
+    @name = bear_name
+  end
 
-def get_name
-return @name
-end
+  def get_name
+    return @name
+  end
 
-def set_owner=(owner_name)
-@owner_name = owner_name
-end
+  def set_owner=(owner_name)
+    @owner_name = owner_name
+  end
 
-def get_owner
-return @owner_name
-end
-
+  def get_owner
+    return @owner_name
+  end
 end
 
 class Panda < Bear
-
-def nom
-return "nom nom nom nom"
-end
-
+  def nom
+    return "nom nom nom nom"
+  end
 end
 
 class Brown < Bear
-
-def yum
-return "yum yum yum yum"
-end
-
+  def yum
+    return "yum yum yum yum"
+  end
 end
 
 class Black < Bear
-def roar
-return "growl growl growl"
-end
-
+  def roar
+    return "growl growl growl"
+  end
 end
 
 my_panda = Panda.new
