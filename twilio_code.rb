@@ -1,9 +1,6 @@
 require 'rubygems'
 require 'twilio-ruby'
 
-account_sid = "AC0b688c90b31363f6a92962e3401dc54f"
-auth_token = "f59013df89caefcd367cb56536716e48"
-
 @client = Twilio::REST::Client.new(account_sid, auth_token)
 
 puts "What is your question?"
@@ -15,7 +12,7 @@ puts answer
 
 message = @client.account.messages.create(
   :from => "+13307540908",
-  :to => "+13307059146",
+  :to => phone_number,
   :body => "#{answer}"
 )
 
